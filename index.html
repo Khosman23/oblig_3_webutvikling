@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Forside</title>
+    </head>
+    <body>
+        <div id="grid-forside">
+        <header>
+            
+            <nav>
+                <div>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                    <img class="logo" src="img/Logo.png" alt="logo"> 
+                          
+                <ul class="nav_links">
+                    <li><a href="produkt.html">Menn</a> </li>
+                    <li><a href="produkt.html">Damer</a> </li>
+                    <li><a href="produkt.html">Barn</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="haaland">
+                <a href="produkt.html"><img src="img/forside_1.png" alt="Haaland">
+            </section>
+            
+            <section class="sko">
+                <article class="gress">
+                    <a href="produkt.html"><img src="img/forside_2.png" alt="Gress">
+                    <h2>GRESS</h2>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="img/forside_3.png" alt="Kunstgress">
+                    <h2>KUNSTGRESS</h2>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="img/forside_4.png" alt="Innendørs">
+                    <h2>INNENDØRS</h2>
+                </article>
+            </section>
+        </main>
+        </div>
+        
+        <script>
+            let x = document.querySelector(".nav_links")
+
+           document.getElementById("ham").addEventListener("click", (e)=>{
+            if (x.className === "nav_links") {
+                x.className += " responsive";
+           } else {
+                x.className = "nav_links"
+           }
+           })
+
+        </script>
+        <footer>Laget av Khalid</footer>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Forside</title>
+    </head>
+    <body>
+        <div id="grid-produkt">
+        <header>
+            
+            <nav>
+                <div>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                    <img class="logo" src="img/Logo.png" alt="logo"> 
+                       
+                <ul class="nav_links">
+                    <li><a href="index.html">Hjem</a> </li>
+                    <li><a href="index.html">Tilbake</a> </li>
+                    <li><a href="produkt.html">Menn</a> </li>
+                    <li><a href="produkt.html">Damer</a> </li>
+                    <li><a href="produkt.html">Barn</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="Produktside">
+                
+                <article>
+                    <a href="skoside.html"><img src="img/produktside_1.png" alt="og svart">
+                    <h1>OLD GEN black</h1>
+                </article>
+                <article>
+                    <a href="skoside.html"><img src="img/produktside_2.png" alt="ng svart">
+                    <h1>NEW GEN black</h1>
+                </article>
+                <article>
+                    <a href="skoside.html"><img class="fg-svart" src="img/produktside_3.png" alt="fg svart">
+                    <h1>FXP FIRST GEN black</h1>
+                </article>                                       
+            
+                <article>
+                    <a href="skoside.html"><img src="img/produktside_5.png" alt="og hvit">
+                    <h1>OLD GEN white</h1>
+                </article>
+                <article>
+                    <a href="skoside.html"><img src="img/produktside_7.png" alt="fg hvit">
+                    <h1>FXP FIRST GEN white</h1>
+                </article>
+                <article>
+                    <a href="skoside.html"><img src="img/produktside_8.png" alt="sg hvit">
+                    <h1>FXP 2ND GEN white</h1>
+                </article>
+            </section>
+        </main>
+    </div>
+        <script>
+            let x = document.querySelector(".nav_links")
+
+           document.getElementById("ham").addEventListener("click", (e)=>{
+            if (x.className === "nav_links") {
+                x.className += " responsive";
+           } else {
+                x.className = "nav_links"
+           }
+           })
+
+        </script>
+        <footer>Laget av Khalid</footer>
+    </body>
+    
+</html>
